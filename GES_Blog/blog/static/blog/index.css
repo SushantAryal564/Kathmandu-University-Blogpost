@@ -1,0 +1,147 @@
+
+#welcome {
+  background: linear-gradient(to right top, #fdafad, #fe0000);
+  padding: 6rem 12%;
+}
+#welcome header {
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem auto;
+}
+
+#welcome img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  transform: rotateZ(-5deg);
+}
+
+#welcome h2 {
+  font-size: 3.5rem;
+  margin: 0 0 0 2rem;
+  color: #e4e4e4;
+  width: 40rem;
+  line-height: 3rem;
+  color:#aac7e5;
+}
+
+#welcome p {
+  color: white;
+  font-size: 1.5rem;
+}
+.blog_content{
+padding:2rem;
+width:100%;
+}
+
+.blog_content .load-btn{
+display:block;
+width:150px;
+margin:5vh auto;
+}
+
+.left_content{
+display:flex;
+align-items:top;
+justify-content: space-between;
+flex-wrap:wrap;
+column-count: 2;
+gap: 20px 10px;
+}
+
+.blog_card{
+width:100%;
+flex:0 0 48.5%;
+overflow:hidden;
+background-color:var(--white);
+}
+
+.blog_card:nth-child(1){
+flex:0 0 100%;
+}
+
+.blog_card .figure{
+display:block;
+width:100%;
+height:200px;
+position:relative;
+overflow:hidden;
+}
+
+.blog_card:nth-child(1) .figure{
+height:300px;
+}
+
+.blog_card .figure img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:0.5s;
+}
+
+.blog_card .tag{
+padding:5px 10px;
+background-color:var(--yellow);
+color:var(--white);
+position:absolute;
+right:1%;
+top:3%;
+font-size:12px;
+}
+
+.blog_card section{
+padding:1rem;
+position:relative;
+background-color:var(--white);
+}
+
+.blog_card section .title{
+font-weight:600;
+font-size:18px;
+color:var(--dark);
+width:auto;
+}
+
+.blog_card section a:hover{
+color:var(--yellow);
+}
+
+.blog_card:hover > .figure img{
+transform:scale(1.1);
+}
+
+.share_icon{
+position:absolute;
+bottom:-30px;
+left:10px;
+background-color:var(--red);
+color:var(--white);
+display:flex;
+align-items:center;
+padding-right:5px;
+font-size:13px;
+cursor:pointer;
+transition:0.5s;
+}
+
+.share_icon .fa{
+padding:5px;
+background-color:var(--darkred);
+margin-right:10px;
+}
+
+.blog_card section img{
+width:30%;
+margin-right:20px;
+object-fit:cover;
+border:5px solid rgba(1,1,1,0.1);
+}
+
+.blog_card section img:nth-child(even){
+float:left;
+}
+
+.blog_card section img:nth-child(odd){
+float:right;
+}
+
